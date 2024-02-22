@@ -1,0 +1,89 @@
+
+\documentclass{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage{graphicx}
+\usepackage{float}
+\usepackage{hyperref}
+\usepackage{listings}
+\usepackage{xcolor}
+
+\title{Report: Name of Module}
+\author{Cole Rottenberg \\ 11062528}
+\date{\today}
+
+% Define Assembly Language as a language for the listings package
+\usepackage{listings} % Required for inserting code snippets
+
+% Define x86asm style
+\lstdefinestyle{x86asm}{
+  language=[x86masm]Assembler,  % x86 assembly
+  basicstyle=\ttfamily\small,
+  commentstyle=\color{gray},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  stepnumber=1,
+  numbersep=10pt,
+  tabsize=4,
+  showspaces=false,
+  showstringspaces=false,
+  breaklines=true,
+  frame=single,
+  rulecolor=\color{black},
+  captionpos=b,
+  stringstyle=\color{blue},
+  keywordstyle=\color{purple},
+}
+
+% Define ARM style
+\lstdefinestyle{arm}{
+  language=[ARM]Assembler,  % ARM assembly
+  basicstyle=\ttfamily\small,
+  commentstyle=\color{gray},
+  numbers=left,
+  numberstyle=\tiny\color{gray},
+  stepnumber=1,
+  numbersep=10pt,
+  tabsize=4,
+  showspaces=false,
+  showstringspaces=false,
+  breaklines=true,
+  frame=single,
+  rulecolor=\color{black},
+  captionpos=b,
+  stringstyle=\color{blue},
+  keywordstyle=\color{purple},
+}
+
+% Usage
+
+
+\begin{document}
+
+\maketitle
+
+\section*{Introduction}
+
+\begin{lstlisting}
+  [language=x86asm]
+  mov eax, 1
+  add eax, 1
+  sub eax, 1
+  mov ebx, 0
+  mov ecx, 0
+  mov edx, 0
+  int 0x80
+  
+\end{lstlisting}
+% The introduction should be one to two paragraphs and include background information on the module’s hardware and explain the goal(s) of the design. Remember: effective technical reports convey the key essential information in a concise and clear manner (Focus on quality, not length).
+
+% Add your introduction content here
+\section*{Design}
+% The design section should include a detailed description of the module’s design and how it was implemented.  Hardware and software layout diagrams (i.e. hardware connection block diagram, software flow chart, etc.) should be included to illustrate the design’s intricacies.  The experimental results should also be displayed in this section and Figures should be labeled with descriptive figure captions occurring below the figure. Screen shots of schematics or waveform results are allowed; however, use text boxes to label the axes. (See the grouped picture and text boxes below). 
+
+% Add your design content here
+
+\section*{Conclusion}
+% The conclusion should compare the experimental results to the theoretical results and explain any discrepancies and why they occurred.  This section should also list any difficulties encountered during implementation of the design and describe the design’s success or explain how/why it failed.
+
+\end{document}
