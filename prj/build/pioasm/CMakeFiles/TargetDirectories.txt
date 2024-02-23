@@ -1,0 +1,3 @@
+/home/crott/Documents/spring24/cpe1/DriversLab/prj/build/pioasm/CMakeFiles/pioasm.dir
+/home/crott/Documents/spring24/cpe1/DriversLab/prj/build/pioasm/CMakeFiles/edit_cache.dir
+/home/crott/Documents/spring24/cpe1/DriversLab/prj/build/pioasm/CMakeFiles/rebuild_cache.dir
