@@ -4,7 +4,7 @@
 
 // based on PICO_CONFIG_HEADER_FILES:
 
-#include "/home/crott/pico/pico-sdk/src/boards/include/boards/pico.h"
+#include "/home/crott/pico/pico-sdk/src/boards/include/boards/adafruit_feather_rp2040.h"
 
 // based on PICO_RP2040_CONFIG_HEADER_FILES:
 

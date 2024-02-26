@@ -1,4 +1,4 @@
-# Install script for directory: /home/crott/pico/pico-sdk
+# Install script for directory: /home/crott/Documents/spring24/cpe1/DriversLab/prj
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,10 +39,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/crott/Documents/spring24/cpe1/DriversLab/prj/build/tools/cmake_install.cmake")
-  include("/home/crott/Documents/spring24/cpe1/DriversLab/prj/build/src/cmake_install.cmake")
-  include("/home/crott/Documents/spring24/cpe1/DriversLab/prj/build/test/cmake_install.cmake")
-  include("/home/crott/Documents/spring24/cpe1/DriversLab/prj/build/docs/cmake_install.cmake")
+  include("/home/crott/Documents/spring24/cpe1/DriversLab/prj/build/pico-sdk/cmake_install.cmake")
 
 endif()
 
