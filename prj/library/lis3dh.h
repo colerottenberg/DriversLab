@@ -34,6 +34,14 @@ lis3dh::~lis3dh() {}
 /* Init */
 bool lis3dh::init() {
   /* Initializes the accelerometer */
+  i2c_init(i2c_default, 400 * 1000);
+  gpio_set_function(PICO_DEFAULT_I2C_SDA_PIN, GPIO_FUNC_I2C);
+  gpio_set_function(PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C);
+  gpio_pull_up(PICO_DEFAULT_I2C_SDA_PIN);
+  gpio_pull_up(PICO_DEFAULT_I2C_SCL_PIN);
+  // Make the I2C pins available to picotool
+  bi_decl(bi_2pins_with_func(PICO_DEFAULT_I2C_SDA_PIN, PICO_DEFAULT_I2C_SCL_PIN, GPIO_FUNC_I2C));
+
   lis3dh_init();
   return true;
 }
@@ -55,12 +63,18 @@ void lis3dh::update() {
   /* Updates the class members x, y, z with current acceleration values */
   float _x, _y, _z;
   // Read raw data from accelerometer and store through pointers
+
   lis3dh_read_data(0x28, &_x, true);
   lis3dh_read_data(0x2A, &_y, true);
   lis3dh_read_data(0x2C, &_z, true);
 
+
+  float x, y, z;
   // Convert raw data to g's and store in class members
-  lis3dh_calc_value(_x, &this->x, true);
-  lis3dh_calc_value(_y, &this->y, true);
-  lis3dh_calc_value(_z, &this->z, true);
+  lis3dh_calc_value(_x, &x, false);
+  lis3dh_calc_value(_y, &y, false);
+  lis3dh_calc_value(_z, &z, false);
+  this->x = x;
+  this->y = y;
+  this->z = z;
 }

@@ -61,6 +61,8 @@ Discarded input sections
  .text          0x0000000000000000        0x0 CMakeFiles/level.dir/src/level.cpp.obj
  .data          0x0000000000000000        0x0 CMakeFiles/level.dir/src/level.cpp.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/level.dir/src/level.cpp.obj
+ .text._Z11lis3dh_initv
+                0x0000000000000000       0x58 CMakeFiles/level.dir/src/level.cpp.obj
  .text._Z17lis3dh_calc_valuetPfb
                 0x0000000000000000       0x24 CMakeFiles/level.dir/src/level.cpp.obj
  .text._Z16lis3dh_read_datahPfb
@@ -69,14 +71,12 @@ Discarded input sections
                 0x0000000000000000        0x4 CMakeFiles/level.dir/src/level.cpp.obj
  .text._ZN6lis3dhD2Ev
                 0x0000000000000000        0x4 CMakeFiles/level.dir/src/level.cpp.obj
- .text._ZN6lis3dh4initEv
-                0x0000000000000000       0x5c CMakeFiles/level.dir/src/level.cpp.obj
  .text._ZN6lis3dh8read_regEh
                 0x0000000000000000       0x88 CMakeFiles/level.dir/src/level.cpp.obj
  .text._ZN6lis3dh7set_regEhh
                 0x0000000000000000        0x4 CMakeFiles/level.dir/src/level.cpp.obj
  .text._ZN6lis3dh6updateEv
-                0x0000000000000000      0x19c CMakeFiles/level.dir/src/level.cpp.obj
+                0x0000000000000000      0x1a4 CMakeFiles/level.dir/src/level.cpp.obj
  .text          0x0000000000000000        0x0 CMakeFiles/level.dir/library/lis3dh_i2c.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/level.dir/library/lis3dh_i2c.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/level.dir/library/lis3dh_i2c.c.obj
@@ -106,10 +106,6 @@ Discarded input sections
                 0x0000000000000000       0xf4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text.i2c_deinit
                 0x0000000000000000       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
- .text.i2c_set_baudrate
-                0x0000000000000000       0xc4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
- .text.i2c_init
-                0x0000000000000000       0x54 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text.i2c_set_slave_mode
                 0x0000000000000000       0x40 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text.i2c_write_blocking_until
@@ -120,8 +116,6 @@ Discarded input sections
                 0x0000000000000000       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text.i2c_read_timeout_per_char_us
                 0x0000000000000000       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
- .data.i2c0_inst
-                0x0000000000000000        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
  .text          0x0000000000000000        0x0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
  .data          0x0000000000000000        0x0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
  .bss           0x0000000000000000        0x0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
@@ -358,8 +352,6 @@ Discarded input sections
                 0x0000000000000000       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.clock_configure
                 0x0000000000000000      0x114 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
- .text.clock_get_hz
-                0x0000000000000000        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.clock_set_reported_hz
                 0x0000000000000000        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
  .text.frequency_count_khz
@@ -381,12 +373,8 @@ Discarded input sections
                 0x0000000000000000      0x204 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_get_pad
                 0x0000000000000000       0x28 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .text.gpio_set_function
-                0x0000000000000000       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_get_function
                 0x0000000000000000       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
- .text.gpio_set_pulls
-                0x0000000000000000       0x24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_irqover
                 0x0000000000000000       0x24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
  .text.gpio_set_inover
@@ -1216,9 +1204,9 @@ Discarded input sections
  .comment       0x0000000000000000       0x27 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
  .ARM.attributes
                 0x0000000000000000       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
- .text          0x0000000000000000        0x0 /tmp/ccE07jkq.o
- .data          0x0000000000000000        0x0 /tmp/ccE07jkq.o
- .bss           0x0000000000000000        0x0 /tmp/ccE07jkq.o
+ .text          0x0000000000000000        0x0 /tmp/ccflJI4E.o
+ .data          0x0000000000000000        0x0 /tmp/ccflJI4E.o
+ .bss           0x0000000000000000        0x0 /tmp/ccflJI4E.o
  .data          0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .bss           0x0000000000000000        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .text          0x0000000000000000       0x10 /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-atexit.o)
@@ -1482,11 +1470,11 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
 .boot2          0x0000000010000000      0x100
                 0x0000000010000000                __boot2_start__ = .
  *(.boot2)
- .boot2         0x0000000010000000      0x100 /tmp/ccE07jkq.o
+ .boot2         0x0000000010000000      0x100 /tmp/ccflJI4E.o
                 0x0000000010000100                __boot2_end__ = .
                 0x0000000000000001                ASSERT (((__boot2_end__ - __boot2_start__) == 0x100), ERROR: Pico second stage bootloader must be 256 bytes in size)
 
-.text           0x0000000010000100     0x6790
+.text           0x0000000010000100     0x6940
                 0x0000000010000100                __logical_binary_start = .
  *(.vectors)
  .vectors       0x0000000010000100       0xd4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
@@ -1547,560 +1535,574 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x00000000100002b8                _init
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .text*)
  .text          0x00000000100002bc       0x98 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
- .text._Z11lis3dh_initv
-                0x0000000010000354       0x58 CMakeFiles/level.dir/src/level.cpp.obj
-                0x0000000010000354                lis3dh_init()
+ .text._ZN6lis3dh4initEv
+                0x0000000010000354       0x8c CMakeFiles/level.dir/src/level.cpp.obj
+                0x0000000010000354                lis3dh::init()
  .text.startup.main
-                0x00000000100003ac      0x240 CMakeFiles/level.dir/src/level.cpp.obj
-                0x00000000100003ac                main
+                0x00000000100003e0      0x248 CMakeFiles/level.dir/src/level.cpp.obj
+                0x00000000100003e0                main
+ .text.i2c_set_baudrate
+                0x0000000010000628       0xc4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010000628                i2c_set_baudrate
+ .text.i2c_init
+                0x00000000100006ec       0x54 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x00000000100006ec                i2c_init
  .text.i2c_write_blocking
-                0x00000000100005ec       0xd0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x00000000100005ec                i2c_write_blocking
+                0x0000000010000740       0xd0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010000740                i2c_write_blocking
  .text.i2c_read_blocking
-                0x00000000100006bc       0x90 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
-                0x00000000100006bc                i2c_read_blocking
+                0x0000000010000810       0x90 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000010000810                i2c_read_blocking
  .text.running_on_fpga
-                0x000000001000074c       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
-                0x000000001000074c                running_on_fpga
+                0x00000000100008a0       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_platform/platform.c.obj
+                0x00000000100008a0                running_on_fpga
  .text.hw_claim_or_assert
-                0x000000001000075c       0x44 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x000000001000075c                hw_claim_or_assert
+                0x00000000100008b0       0x44 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100008b0                hw_claim_or_assert
  .text.hw_claim_unused_from_range
-                0x00000000100007a0       0x9c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
-                0x00000000100007a0                hw_claim_unused_from_range
+                0x00000000100008f4       0x9c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_claim/claim.c.obj
+                0x00000000100008f4                hw_claim_unused_from_range
  .text.spin_locks_reset
-                0x000000001000083c       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x000000001000083c                spin_locks_reset
+                0x0000000010000990       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x0000000010000990                spin_locks_reset
  .text.next_striped_spin_lock_num
-                0x0000000010000858       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000858                next_striped_spin_lock_num
+                0x00000000100009ac       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100009ac                next_striped_spin_lock_num
  .text.spin_lock_claim_unused
-                0x0000000010000870       0x24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
-                0x0000000010000870                spin_lock_claim_unused
+                0x00000000100009c4       0x24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+                0x00000000100009c4                spin_lock_claim_unused
  .text.timer_pool_entry_comparator
-                0x0000000010000894       0x34 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000894                timer_pool_entry_comparator
+                0x00000000100009e8       0x34 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x00000000100009e8                timer_pool_entry_comparator
  .text.sleep_until_callback
-                0x00000000100008c8       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000a1c       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.add_alarm_under_lock.isra.0
-                0x00000000100008f8      0x100 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000a4c      0x100 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_alarm_callback
-                0x00000000100009f8      0x1c0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000b4c      0x1c0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
  .text.alarm_pool_init_default
-                0x0000000010000bb8       0x6c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000bb8                alarm_pool_init_default
+                0x0000000010000d0c       0x6c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d0c                alarm_pool_init_default
  .text.alarm_pool_get_default
-                0x0000000010000c24        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000c24                alarm_pool_get_default
+                0x0000000010000d78        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d78                alarm_pool_get_default
  .text.alarm_pool_add_alarm_at
-                0x0000000010000c2c      0x188 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000c2c                alarm_pool_add_alarm_at
+                0x0000000010000d80      0x188 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000d80                alarm_pool_add_alarm_at
  .text.alarm_pool_core_num
-                0x0000000010000db4        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000db4                alarm_pool_core_num
+                0x0000000010000f08        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000f08                alarm_pool_core_num
  .text.sleep_until
-                0x0000000010000db8       0xc4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000db8                sleep_until
+                0x0000000010000f0c       0xc4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000f0c                sleep_until
  .text.sleep_ms
-                0x0000000010000e7c       0x38 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000e7c                sleep_ms
+                0x0000000010000fd0       0x38 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010000fd0                sleep_ms
  .text.best_effort_wfe_or_timeout
-                0x0000000010000eb4       0xec CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
-                0x0000000010000eb4                best_effort_wfe_or_timeout
+                0x0000000010001008       0xec CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000010001008                best_effort_wfe_or_timeout
  .text.hardware_alarm_irq_handler
-                0x0000000010000fa0       0xbc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100010f4       0xbc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
  .text.hardware_alarm_claim
-                0x000000001000105c       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x000000001000105c                hardware_alarm_claim
+                0x00000000100011b0       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100011b0                hardware_alarm_claim
  .text.time_us_64
-                0x0000000010001074       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001074                time_us_64
+                0x00000000100011c8       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100011c8                time_us_64
  .text.busy_wait_until
-                0x0000000010001088       0x20 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001088                busy_wait_until
+                0x00000000100011dc       0x20 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100011dc                busy_wait_until
  .text.hardware_alarm_set_callback
-                0x00000000100010a8       0x8c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x00000000100010a8                hardware_alarm_set_callback
+                0x00000000100011fc       0x8c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x00000000100011fc                hardware_alarm_set_callback
  .text.hardware_alarm_set_target
-                0x0000000010001134       0xd0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001134                hardware_alarm_set_target
+                0x0000000010001288       0xd0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001288                hardware_alarm_set_target
  .text.hardware_alarm_cancel
-                0x0000000010001204       0x3c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
-                0x0000000010001204                hardware_alarm_cancel
+                0x0000000010001358       0x3c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+                0x0000000010001358                hardware_alarm_cancel
  .text.irq_set_enabled
-                0x0000000010001240       0x24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001240                irq_set_enabled
+                0x0000000010001394       0x24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001394                irq_set_enabled
  .text.irq_set_pending
-                0x0000000010001264       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001264                irq_set_pending
+                0x00000000100013b8       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100013b8                irq_set_pending
  .text.irq_has_shared_handler
-                0x0000000010001274       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001274                irq_has_shared_handler
+                0x00000000100013c8       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100013c8                irq_has_shared_handler
  .text.irq_get_vtable_handler
-                0x00000000100012a0       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100012a0                irq_get_vtable_handler
+                0x00000000100013f4       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100013f4                irq_get_vtable_handler
  .text.irq_set_exclusive_handler
-                0x00000000100012b0       0x54 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100012b0                irq_set_exclusive_handler
+                0x0000000010001404       0x54 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001404                irq_set_exclusive_handler
  .text.irq_add_shared_handler
-                0x0000000010001304      0x1f4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001304                irq_add_shared_handler
+                0x0000000010001458      0x1f4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001458                irq_add_shared_handler
  .text.irq_remove_handler
-                0x00000000100014f8      0x1c4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100014f8                irq_remove_handler
+                0x000000001000164c      0x1c4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x000000001000164c                irq_remove_handler
  .text.irq_add_tail_to_free_list
-                0x00000000100016bc       0xb4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x00000000100016bc                irq_add_tail_to_free_list
+                0x0000000010001810       0xb4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x0000000010001810                irq_add_tail_to_free_list
  .text.irq_init_priorities
-                0x0000000010001770       0x24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001770                irq_init_priorities
+                0x00000000100018c4       0x24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100018c4                irq_init_priorities
  .text.user_irq_claim_unused
-                0x0000000010001794       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
-                0x0000000010001794                user_irq_claim_unused
+                0x00000000100018e8       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+                0x00000000100018e8                user_irq_claim_unused
  .text.lock_init
-                0x00000000100017c0       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
-                0x00000000100017c0                lock_init
+                0x0000000010001914       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_sync/lock_core.c.obj
+                0x0000000010001914                lock_init
  .text.mutex_init
-                0x00000000100017d0       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000100017d0                mutex_init
+                0x0000000010001924       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010001924                mutex_init
  .text.recursive_mutex_init
-                0x00000000100017ec       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
-                0x00000000100017ec                recursive_mutex_init
+                0x0000000010001940       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_sync/mutex.c.obj
+                0x0000000010001940                recursive_mutex_init
  .text.critical_section_init
-                0x0000000010001808       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010001808                critical_section_init
+                0x000000001000195c       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x000000001000195c                critical_section_init
  .text.critical_section_init_with_lock_num
-                0x0000000010001824       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
-                0x0000000010001824                critical_section_init_with_lock_num
+                0x0000000010001978       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_sync/critical_section.c.obj
+                0x0000000010001978                critical_section_init_with_lock_num
  .text.ph_merge_nodes
-                0x0000000010001838       0x64 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x000000001000198c       0x64 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_post_alloc_init
-                0x000000001000189c       0x3c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x000000001000189c                ph_post_alloc_init
+                0x00000000100019f0       0x3c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x00000000100019f0                ph_post_alloc_init
  .text.ph_merge_two_pass
-                0x00000000100018d8       0x98 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x00000000100018d8                ph_merge_two_pass
+                0x0000000010001a2c       0x98 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001a2c                ph_merge_two_pass
  .text.ph_remove_any_head
-                0x0000000010001970      0x100 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001ac4      0x100 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
  .text.ph_remove_head
-                0x0000000010001a70      0x104 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001a70                ph_remove_head
+                0x0000000010001bc4      0x104 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001bc4                ph_remove_head
  .text.ph_remove_and_free_node
-                0x0000000010001b74       0x78 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
-                0x0000000010001b74                ph_remove_and_free_node
+                0x0000000010001cc8       0x78 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_util/pheap.c.obj
+                0x0000000010001cc8                ph_remove_and_free_node
  .text.clocks_init
-                0x0000000010001bec      0x2c8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
-                0x0000000010001bec                clocks_init
+                0x0000000010001d40      0x2c8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010001d40                clocks_init
+ .text.clock_get_hz
+                0x0000000010002008        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_clocks/clocks.c.obj
+                0x0000000010002008                clock_get_hz
+ .text.gpio_set_function
+                0x0000000010002014       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010002014                gpio_set_function
+ .text.gpio_set_pulls
+                0x0000000010002044       0x24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010002044                gpio_set_pulls
  .text.gpio_init
-                0x0000000010001eb4       0x3c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
-                0x0000000010001eb4                gpio_init
+                0x0000000010002068       0x3c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_gpio/gpio.c.obj
+                0x0000000010002068                gpio_init
  .text.pll_init
-                0x0000000010001ef0       0xa0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
-                0x0000000010001ef0                pll_init
+                0x00000000100020a4       0xa0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_pll/pll.c.obj
+                0x00000000100020a4                pll_init
  .text.watchdog_start_tick
-                0x0000000010001f90       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001f90                watchdog_start_tick
+                0x0000000010002144       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010002144                watchdog_start_tick
  .text.watchdog_reboot
-                0x0000000010001fa0       0x9c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
-                0x0000000010001fa0                watchdog_reboot
+                0x0000000010002154       0x9c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_watchdog/watchdog.c.obj
+                0x0000000010002154                watchdog_reboot
  .text.xosc_init
-                0x000000001000203c       0x28 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
-                0x000000001000203c                xosc_init
+                0x00000000100021f0       0x28 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_xosc/xosc.c.obj
+                0x00000000100021f0                xosc_init
  .text.runtime_init
-                0x0000000010002064       0xf0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002064                runtime_init
- .text._exit    0x0000000010002154        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002154                _exit
- .text.exit     0x0000000010002158        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002158                exit
- .text.panic    0x0000000010002160       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002160                panic
+                0x0000000010002218       0xf0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002218                runtime_init
+ .text._exit    0x0000000010002308        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002308                _exit
+ .text.exit     0x000000001000230c        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x000000001000230c                exit
+ .text.panic    0x0000000010002314       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002314                panic
  .text.hard_assertion_failure
-                0x0000000010002190        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
-                0x0000000010002190                hard_assertion_failure
+                0x0000000010002344        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010002344                hard_assertion_failure
  .text._out_null
-                0x000000001000219c        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002350        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_rev
-                0x00000000100021a0       0x90 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002354       0x90 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._ntoa_format
-                0x0000000010002230      0x1f4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100023e4      0x1f4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_char
-                0x0000000010002424       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100025d8       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._out_fct
-                0x0000000010002434       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._etoa    0x0000000010002444      0x454 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- .text._ftoa    0x0000000010002898      0x3c4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x00000000100025e8       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._etoa    0x00000000100025f8      0x454 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ .text._ftoa    0x0000000010002a4c      0x3c4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text._vsnprintf
-                0x0000000010002c5c      0xb24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010002e10      0xb24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .text.vfctprintf
-                0x0000000010003780       0x20 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x0000000010003780                vfctprintf
+                0x0000000010003934       0x20 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003934                vfctprintf
  .text.weak_raw_vprintf
-                0x00000000100037a0       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
-                0x00000000100037a0                weak_raw_vprintf
- .text          0x00000000100037d0       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
+                0x0000000010003954       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010003954                weak_raw_vprintf
+ .text          0x0000000010003984       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
  .text.rom_func_lookup
-                0x00000000100037e0       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100037e0                rom_func_lookup
+                0x0000000010003994       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x0000000010003994                rom_func_lookup
  .text.rom_data_lookup
-                0x00000000100037f0       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x00000000100037f0                rom_data_lookup
+                0x00000000100039a4       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000100039a4                rom_data_lookup
  .text.rom_funcs_lookup
-                0x0000000010003800       0x44 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
-                0x0000000010003800                rom_funcs_lookup
+                0x00000000100039b4       0x44 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_bootrom/bootrom.c.obj
+                0x00000000100039b4                rom_funcs_lookup
  .text.__wrap___aeabi_idiv
-                0x0000000010003844       0x50 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003844                __wrap___aeabi_idivmod
-                0x0000000010003844                divmod_s32s32
-                0x0000000010003844                div_s32s32
-                0x0000000010003844                __wrap___aeabi_idiv
-                0x000000001000384c                divmod_s32s32_unsafe
-                0x0000000010003878                divmod_s32s32_savestate
+                0x00000000100039f8       0x50 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x00000000100039f8                __wrap___aeabi_idivmod
+                0x00000000100039f8                divmod_s32s32
+                0x00000000100039f8                div_s32s32
+                0x00000000100039f8                __wrap___aeabi_idiv
+                0x0000000010003a00                divmod_s32s32_unsafe
+                0x0000000010003a2c                divmod_s32s32_savestate
  .text.__wrap___aeabi_uidiv
-                0x0000000010003894       0x4c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x0000000010003894                __wrap___aeabi_uidiv
-                0x0000000010003894                __wrap___aeabi_uidivmod
-                0x0000000010003894                div_u32u32
-                0x0000000010003894                divmod_u32u32
-                0x000000001000389c                divmod_u32u32_unsafe
-                0x00000000100038c4                divmod_u32u32_savestate
+                0x0000000010003a48       0x4c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003a48                __wrap___aeabi_uidiv
+                0x0000000010003a48                __wrap___aeabi_uidivmod
+                0x0000000010003a48                div_u32u32
+                0x0000000010003a48                divmod_u32u32
+                0x0000000010003a50                divmod_u32u32_unsafe
+                0x0000000010003a78                divmod_u32u32_savestate
  .text.__wrap___aeabi_ldiv
-                0x00000000100038e0      0x424 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
-                0x00000000100038e0                div_s64s64
-                0x00000000100038e0                divmod_s64s64
-                0x00000000100038e0                __wrap___aeabi_ldivmod
-                0x0000000010003910                div_u64u64
-                0x0000000010003910                divmod_u64u64
-                0x0000000010003910                __wrap___aeabi_uldivmod
-                0x0000000010003920                divmod_u64u64_savestate
-                0x0000000010003940                divmod_s64s64_unsafe
-                0x00000000100039c8                divmod_u64u64_unsafe
+                0x0000000010003a94      0x424 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_divider/divider.S.obj
+                0x0000000010003a94                div_s64s64
+                0x0000000010003a94                divmod_s64s64
+                0x0000000010003a94                __wrap___aeabi_ldivmod
+                0x0000000010003ac4                div_u64u64
+                0x0000000010003ac4                divmod_u64u64
+                0x0000000010003ac4                __wrap___aeabi_uldivmod
+                0x0000000010003ad4                divmod_u64u64_savestate
+                0x0000000010003af4                divmod_s64s64_unsafe
+                0x0000000010003b7c                divmod_u64u64_unsafe
  .text.__wrap___aeabi_darithmetic
-                0x0000000010003d04       0x60 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003d04                __wrap___aeabi_drsub
-                0x0000000010003d0a                __wrap___aeabi_dsub
-                0x0000000010003d14                __wrap___aeabi_dadd
-                0x0000000010003d1e                __wrap___aeabi_ddiv
-                0x0000000010003d52                __wrap___aeabi_dmul
+                0x0000000010003eb8       0x60 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003eb8                __wrap___aeabi_drsub
+                0x0000000010003ebe                __wrap___aeabi_dsub
+                0x0000000010003ec8                __wrap___aeabi_dadd
+                0x0000000010003ed2                __wrap___aeabi_ddiv
+                0x0000000010003f06                __wrap___aeabi_dmul
  .text.__wrap___aeabi_cdcmple
-                0x0000000010003d64       0x6c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003d64                __wrap___aeabi_cdrcmple
-                0x0000000010003d74                __wrap___aeabi_cdcmple
-                0x0000000010003d74                __wrap___aeabi_cdcmpeq
+                0x0000000010003f18       0x6c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003f18                __wrap___aeabi_cdrcmple
+                0x0000000010003f28                __wrap___aeabi_cdcmple
+                0x0000000010003f28                __wrap___aeabi_cdcmpeq
  .text.__wrap___aeabi_dcmplt
-                0x0000000010003dd0        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003dd0                __wrap___aeabi_dcmplt
+                0x0000000010003f84        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003f84                __wrap___aeabi_dcmplt
  .text.__wrap___aeabi_dcmpge
-                0x0000000010003ddc       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003ddc                __wrap___aeabi_dcmpge
+                0x0000000010003f90       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003f90                __wrap___aeabi_dcmpge
  .text.__wrap___aeabi_dcmpgt
-                0x0000000010003dec        0xa CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003dec                __wrap___aeabi_dcmpgt
+                0x0000000010003fa0        0xa CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003fa0                __wrap___aeabi_dcmpgt
  .text.__wrap___aeabi_dcmpun
-                0x0000000010003df6       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003df6                __wrap___aeabi_dcmpun
- *fill*         0x0000000010003e12        0x2 
+                0x0000000010003faa       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003faa                __wrap___aeabi_dcmpun
+ *fill*         0x0000000010003fc6        0x2 
  .text.__wrap___aeabi_i2d
-                0x0000000010003e14       0x38 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003e14                __wrap___aeabi_ui2d
-                0x0000000010003e1c                __wrap___aeabi_i2d
+                0x0000000010003fc8       0x38 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010003fc8                __wrap___aeabi_ui2d
+                0x0000000010003fd0                __wrap___aeabi_i2d
  .text.__wrap___aeabi_d2iz
-                0x0000000010003e4c       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003e4c                __wrap___aeabi_d2iz
-                0x0000000010003e4c                double2int_z
+                0x0000000010004000       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004000                __wrap___aeabi_d2iz
+                0x0000000010004000                double2int_z
  .text.__wrap___aeabi_d2uiz
-                0x0000000010003e94       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
-                0x0000000010003e94                double2uint
-                0x0000000010003e94                __wrap___aeabi_d2uiz
+                0x0000000010004048       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_aeabi.S.obj
+                0x0000000010004048                double2uint
+                0x0000000010004048                __wrap___aeabi_d2uiz
  .text.missing_double_func_shim
-                0x0000000010003ea4        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010004058        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .text.__aeabi_double_init
-                0x0000000010003eb0       0x94 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
-                0x0000000010003eb0                __aeabi_double_init
+                0x0000000010004064       0x94 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010004064                __aeabi_double_init
  .text.double_table_shim_on_use_helper
-                0x0000000010003f44       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
-                0x0000000010003f44                double_table_shim_on_use_helper
+                0x00000000100040f8       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_v1_rom_shim.S.obj
+                0x00000000100040f8                double_table_shim_on_use_helper
  .text.__aeabi_lmul
-                0x0000000010003f70       0x32 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
-                0x0000000010003f70                __wrap___aeabi_lmul
- *fill*         0x0000000010003fa2        0x2 
+                0x0000000010004124       0x32 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_int64_ops/pico_int64_ops_aeabi.S.obj
+                0x0000000010004124                __wrap___aeabi_lmul
+ *fill*         0x0000000010004156        0x2 
  .text.__wrap___aeabi_farithmetic
-                0x0000000010003fa4       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010003fa4                __wrap___aeabi_frsub
-                0x0000000010003faa                __wrap___aeabi_fsub
-                0x0000000010003fb0                __wrap___aeabi_fadd
-                0x0000000010003fb6                __wrap___aeabi_fdiv
-                0x0000000010003fde                __wrap___aeabi_fmul
+                0x0000000010004158       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x0000000010004158                __wrap___aeabi_frsub
+                0x000000001000415e                __wrap___aeabi_fsub
+                0x0000000010004164                __wrap___aeabi_fadd
+                0x000000001000416a                __wrap___aeabi_fdiv
+                0x0000000010004192                __wrap___aeabi_fmul
  .text.__wrap___aeabi_i2f
-                0x0000000010003fec       0x44 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010003fec                __wrap___aeabi_i2f
+                0x00000000100041a0       0x44 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100041a0                __wrap___aeabi_i2f
  .text.__wrap___aeabi_f2uiz
-                0x0000000010004030        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x0000000010004030                __wrap___aeabi_f2uiz
+                0x00000000100041e4        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100041e4                __wrap___aeabi_f2uiz
  .text.__wrap___aeabi_f2d
-                0x000000001000403c        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
-                0x000000001000403c                __wrap___aeabi_f2d
+                0x00000000100041f0        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_aeabi.S.obj
+                0x00000000100041f0                __wrap___aeabi_f2d
  .text.missing_float_func_shim
-                0x0000000010004048        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x00000000100041fc        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
  .text.__aeabi_float_init
-                0x0000000010004054       0x5c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
-                0x0000000010004054                __aeabi_float_init
- .text          0x00000000100040b0       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100040b0                __aeabi_mem_init
- .text.memset   0x00000000100040c0        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100040c0                __wrap_memset
- .text.memcpy   0x00000000100040cc        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
-                0x00000000100040cc                __wrap___aeabi_memcpy
-                0x00000000100040cc                __wrap_memcpy
+                0x0000000010004208       0x5c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010004208                __aeabi_float_init
+ .text          0x0000000010004264       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004264                __aeabi_mem_init
+ .text.memset   0x0000000010004274        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004274                __wrap_memset
+ .text.memcpy   0x0000000010004280        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_mem_ops/mem_ops_aeabi.S.obj
+                0x0000000010004280                __wrap___aeabi_memcpy
+                0x0000000010004280                __wrap_memcpy
  .text.stdio_out_chars_crlf
-                0x00000000100040d8       0xbc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x000000001000428c       0xbc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.stdio_buffered_printer
-                0x0000000010004194       0x64 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004348       0x64 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
  .text.__wrap_putchar
-                0x00000000100041f8       0x98 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100041f8                __wrap_putchar
+                0x00000000100043ac       0x98 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x00000000100043ac                __wrap_putchar
  .text.__wrap_puts
-                0x0000000010004290       0xe0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004290                __wrap_puts
+                0x0000000010004444       0xe0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004444                __wrap_puts
  .text.stdio_set_driver_enabled
-                0x0000000010004370       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004370                stdio_set_driver_enabled
+                0x0000000010004524       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004524                stdio_set_driver_enabled
  .text.__wrap_vprintf
-                0x00000000100043a0       0xd4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x00000000100043a0                __wrap_vprintf
+                0x0000000010004554       0xd4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004554                __wrap_vprintf
  .text.__wrap_printf
-                0x0000000010004474       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x0000000010004474                __wrap_printf
+                0x0000000010004628       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004628                __wrap_printf
  .text.stdio_init_all
-                0x000000001000448c        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
-                0x000000001000448c                stdio_init_all
+                0x0000000010004640        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+                0x0000000010004640                stdio_init_all
  .text.resetd_init
-                0x0000000010004494        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004648        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_reset
-                0x0000000010004498        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x000000001000464c        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_open
-                0x00000000100044a4       0x28 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004658       0x28 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_xfer_cb
-                0x00000000100044cc        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004680        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.resetd_control_xfer_cb
-                0x00000000100044d0       0x60 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010004684       0x60 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .text.usbd_app_driver_get_cb
-                0x0000000010004530        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x0000000010004530                usbd_app_driver_get_cb
+                0x00000000100046e4        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100046e4                usbd_app_driver_get_cb
  .text.tud_cdc_line_coding_cb
-                0x000000001000453c       0x34 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
-                0x000000001000453c                tud_cdc_line_coding_cb
+                0x00000000100046f0       0x34 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x00000000100046f0                tud_cdc_line_coding_cb
  .text.stdio_usb_set_chars_available_callback
-                0x0000000010004570       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004570                stdio_usb_set_chars_available_callback
- .text.usb_irq  0x0000000010004584       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004724       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004724                stdio_usb_set_chars_available_callback
+ .text.usb_irq  0x0000000010004738       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.timer_task
-                0x0000000010004594       0x54 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004748       0x54 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.stdio_usb_in_chars
-                0x00000000100045e8       0x90 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x00000000100045e8                stdio_usb_in_chars
+                0x000000001000479c       0x90 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x000000001000479c                stdio_usb_in_chars
  .text.stdio_usb_out_chars
-                0x0000000010004678      0x104 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x000000001000482c      0x104 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.low_priority_worker_irq
-                0x000000001000477c       0xa8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010004930       0xa8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .text.tud_cdc_rx_cb
-                0x0000000010004824       0x20 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004824                tud_cdc_rx_cb
+                0x00000000100049d8       0x20 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000100049d8                tud_cdc_rx_cb
  .text.stdio_usb_init
-                0x0000000010004844       0xe0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010004844                stdio_usb_init
+                0x00000000100049f8       0xe0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x00000000100049f8                stdio_usb_init
  .text.tud_descriptor_device_cb
-                0x0000000010004924        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004924                tud_descriptor_device_cb
+                0x0000000010004ad8        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004ad8                tud_descriptor_device_cb
  .text.tud_descriptor_configuration_cb
-                0x000000001000492c        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x000000001000492c                tud_descriptor_configuration_cb
+                0x0000000010004ae0        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004ae0                tud_descriptor_configuration_cb
  .text.tud_descriptor_string_cb
-                0x0000000010004934       0x78 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
-                0x0000000010004934                tud_descriptor_string_cb
+                0x0000000010004ae8       0x78 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010004ae8                tud_descriptor_string_cb
  .text.startup._retrieve_unique_id_on_boot
-                0x00000000100049ac       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010004b60       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
  .text.pico_get_unique_board_id_string
-                0x00000000100049bc      0x1a8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
-                0x00000000100049bc                pico_get_unique_board_id_string
+                0x0000000010004b70      0x1a8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_unique_id/unique_id.c.obj
+                0x0000000010004b70                pico_get_unique_board_id_string
  .text.flash_get_unique_id
-                0x0000000010004b64       0x40 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
-                0x0000000010004b64                flash_get_unique_id
+                0x0000000010004d18       0x40 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_flash/flash.c.obj
+                0x0000000010004d18                flash_get_unique_id
  .text.dcd_int_enable
-                0x0000000010004ba4        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004ba4                dcd_int_enable
+                0x0000000010004d58        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004d58                dcd_int_enable
  .text.dcd_set_address
-                0x0000000010004bb0       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004bb0                dcd_set_address
+                0x0000000010004d64       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004d64                dcd_set_address
  .text.dcd_connect
-                0x0000000010004bc4       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004bc4                dcd_connect
+                0x0000000010004d78       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004d78                dcd_connect
  .text.dcd_init
-                0x0000000010004bd4       0x98 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004bd4                dcd_init
+                0x0000000010004d88       0x98 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004d88                dcd_init
  .text.dcd_edpt0_status_complete
-                0x0000000010004c6c       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004c6c                dcd_edpt0_status_complete
+                0x0000000010004e20       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e20                dcd_edpt0_status_complete
  .text.dcd_edpt_open
-                0x0000000010004c88      0x108 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004c88                dcd_edpt_open
+                0x0000000010004e3c      0x108 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004e3c                dcd_edpt_open
  .text.dcd_edpt_close_all
-                0x0000000010004d90        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004d90                dcd_edpt_close_all
+                0x0000000010004f44        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004f44                dcd_edpt_close_all
  .text.dcd_edpt_xfer
-                0x0000000010004d98       0x24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004d98                dcd_edpt_xfer
+                0x0000000010004f4c       0x24 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004f4c                dcd_edpt_xfer
  .text.dcd_edpt_stall
-                0x0000000010004dbc       0x38 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004dbc                dcd_edpt_stall
+                0x0000000010004f70       0x38 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004f70                dcd_edpt_stall
  .text.dcd_edpt_clear_stall
-                0x0000000010004df4       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
-                0x0000000010004df4                dcd_edpt_clear_stall
+                0x0000000010004fa8       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010004fa8                dcd_edpt_clear_stall
  .text.rp2040_usb_init
-                0x0000000010004e24       0x4c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010004e24                rp2040_usb_init
+                0x0000000010004fd8       0x4c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010004fd8                rp2040_usb_init
  .text.hw_endpoint_xfer_start
-                0x0000000010004e70       0x40 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
-                0x0000000010004e70                hw_endpoint_xfer_start
+                0x0000000010005024       0x40 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+                0x0000000010005024                hw_endpoint_xfer_start
  .text.tud_mounted
-                0x0000000010004eb0       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010004eb0                tud_mounted
+                0x0000000010005064       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005064                tud_mounted
  .text.tud_suspended
-                0x0000000010004ec0       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010004ec0                tud_suspended
+                0x0000000010005074       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005074                tud_suspended
  .text.tud_inited
-                0x0000000010004ed0       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010004ed0                tud_inited
+                0x0000000010005084       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005084                tud_inited
  .text.tud_init
-                0x0000000010004ee4       0xd8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010004ee4                tud_init
+                0x0000000010005098       0xd8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005098                tud_init
  .text.tud_task_ext
-                0x0000000010004fbc      0x8a8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010004fbc                tud_task_ext
+                0x0000000010005170      0x8a8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005170                tud_task_ext
  .text.usbd_open_edpt_pair
-                0x0000000010005864       0x9c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005864                usbd_open_edpt_pair
+                0x0000000010005a18       0x9c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005a18                usbd_open_edpt_pair
  .text.usbd_defer_func
-                0x0000000010005900       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005900                usbd_defer_func
+                0x0000000010005ab4       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005ab4                usbd_defer_func
  .text.usbd_edpt_open
-                0x0000000010005948       0x34 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010005948                usbd_edpt_open
+                0x0000000010005afc       0x34 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005afc                usbd_edpt_open
  .text.usbd_edpt_claim
-                0x000000001000597c       0x28 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x000000001000597c                usbd_edpt_claim
+                0x0000000010005b30       0x28 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005b30                usbd_edpt_claim
  .text.usbd_edpt_release
-                0x00000000100059a4       0x28 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100059a4                usbd_edpt_release
+                0x0000000010005b58       0x28 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005b58                usbd_edpt_release
  .text.usbd_edpt_xfer
-                0x00000000100059cc       0x4c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x00000000100059cc                usbd_edpt_xfer
+                0x0000000010005b80       0x4c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010005b80                usbd_edpt_xfer
  .text.tud_control_status
-                0x0000000010005a18       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005a18                tud_control_status
+                0x0000000010005bcc       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005bcc                tud_control_status
  .text.tud_control_xfer
-                0x0000000010005a44       0xac CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005a44                tud_control_xfer
+                0x0000000010005bf8       0xac CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005bf8                tud_control_xfer
  .text.usbd_control_reset
-                0x0000000010005af0       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005af0                usbd_control_reset
+                0x0000000010005ca4       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005ca4                usbd_control_reset
  .text.usbd_control_set_complete_callback
-                0x0000000010005b04        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005b04                usbd_control_set_complete_callback
+                0x0000000010005cb8        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005cb8                usbd_control_set_complete_callback
  .text.usbd_control_set_request
-                0x0000000010005b10       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005b10                usbd_control_set_request
+                0x0000000010005cc4       0x1c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005cc4                usbd_control_set_request
  .text.usbd_control_xfer_cb
-                0x0000000010005b2c       0xf4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
-                0x0000000010005b2c                usbd_control_xfer_cb
+                0x0000000010005ce0       0xf4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd_control.c.obj
+                0x0000000010005ce0                usbd_control_xfer_cb
  .text.tud_cdc_n_connected
-                0x0000000010005c20       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005c20                tud_cdc_n_connected
+                0x0000000010005dd4       0x30 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005dd4                tud_cdc_n_connected
  .text.tud_cdc_n_available
-                0x0000000010005c50       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005c50                tud_cdc_n_available
+                0x0000000010005e04       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005e04                tud_cdc_n_available
  .text.tud_cdc_n_read
-                0x0000000010005c68       0x70 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005c68                tud_cdc_n_read
+                0x0000000010005e1c       0x70 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005e1c                tud_cdc_n_read
  .text.tud_cdc_n_write_flush
-                0x0000000010005cd8       0x78 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005cd8                tud_cdc_n_write_flush
+                0x0000000010005e8c       0x78 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005e8c                tud_cdc_n_write_flush
  .text.tud_cdc_n_write
-                0x0000000010005d50       0x34 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005d50                tud_cdc_n_write
+                0x0000000010005f04       0x34 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005f04                tud_cdc_n_write
  .text.tud_cdc_n_write_available
-                0x0000000010005d84       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005d84                tud_cdc_n_write_available
+                0x0000000010005f38       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005f38                tud_cdc_n_write_available
  .text.cdcd_init
-                0x0000000010005d9c       0x7c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005d9c                cdcd_init
+                0x0000000010005f50       0x7c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005f50                cdcd_init
  .text.cdcd_reset
-                0x0000000010005e18       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005e18                cdcd_reset
+                0x0000000010005fcc       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005fcc                cdcd_reset
  .text.cdcd_open
-                0x0000000010005e44       0xe4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005e44                cdcd_open
+                0x0000000010005ff8       0xe4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x0000000010005ff8                cdcd_open
  .text.cdcd_control_xfer_cb
-                0x0000000010005f28       0xe4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x0000000010005f28                cdcd_control_xfer_cb
+                0x00000000100060dc       0xe4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100060dc                cdcd_control_xfer_cb
  .text.cdcd_xfer_cb
-                0x000000001000600c      0x13c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
-                0x000000001000600c                cdcd_xfer_cb
+                0x00000000100061c0      0x13c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/cdc/cdc_device.c.obj
+                0x00000000100061c0                cdcd_xfer_cb
  .text.tusb_init
-                0x0000000010006148        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006148                tusb_init
+                0x00000000100062fc        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x00000000100062fc                tusb_init
  .text.tusb_inited
-                0x0000000010006154        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006154                tusb_inited
+                0x0000000010006308        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006308                tusb_inited
  .text.tu_edpt_claim
-                0x000000001000615c       0x50 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x000000001000615c                tu_edpt_claim
+                0x0000000010006310       0x50 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006310                tu_edpt_claim
  .text.tu_edpt_release
-                0x00000000100061ac       0x38 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100061ac                tu_edpt_release
+                0x0000000010006360       0x38 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006360                tu_edpt_release
  .text.tu_edpt_validate
-                0x00000000100061e4       0x7c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x00000000100061e4                tu_edpt_validate
+                0x0000000010006398       0x7c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006398                tu_edpt_validate
  .text.tu_edpt_bind_driver
-                0x0000000010006260       0x34 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
-                0x0000000010006260                tu_edpt_bind_driver
+                0x0000000010006414       0x34 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
+                0x0000000010006414                tu_edpt_bind_driver
  .text.tu_fifo_config
-                0x0000000010006294       0x6c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006294                tu_fifo_config
+                0x0000000010006448       0x6c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006448                tu_fifo_config
  .text.tu_fifo_count
-                0x0000000010006300       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006300                tu_fifo_count
+                0x00000000100064b4       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100064b4                tu_fifo_count
  .text.tu_fifo_empty
-                0x000000001000632c       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000632c                tu_fifo_empty
+                0x00000000100064e0       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100064e0                tu_fifo_empty
  .text.tu_fifo_remaining
-                0x000000001000633c       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x000000001000633c                tu_fifo_remaining
+                0x00000000100064f0       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100064f0                tu_fifo_remaining
  .text.tu_fifo_read
-                0x0000000010006368       0x9c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006368                tu_fifo_read
+                0x000000001000651c       0x9c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x000000001000651c                tu_fifo_read
  .text.tu_fifo_read_n
-                0x0000000010006404       0xe8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006404                tu_fifo_read_n
+                0x00000000100065b8       0xe8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100065b8                tu_fifo_read_n
  .text.tu_fifo_write
-                0x00000000100064ec       0x88 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100064ec                tu_fifo_write
+                0x00000000100066a0       0x88 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100066a0                tu_fifo_write
  .text.tu_fifo_write_n
-                0x0000000010006574      0x170 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006574                tu_fifo_write_n
+                0x0000000010006728      0x170 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006728                tu_fifo_write_n
  .text.tu_fifo_clear
-                0x00000000100066e4       0x40 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x00000000100066e4                tu_fifo_clear
+                0x0000000010006898       0x40 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x0000000010006898                tu_fifo_clear
  .text.tu_fifo_set_overwritable
-                0x0000000010006724       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
-                0x0000000010006724                tu_fifo_set_overwritable
- .text          0x000000001000676c       0x5c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
-                0x000000001000676c                strlen
+                0x00000000100068d8       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
+                0x00000000100068d8                tu_fifo_set_overwritable
+ .text          0x0000000010006920       0x5c /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libc.a(lib_a-strlen-stub.o)
+                0x0000000010006920                strlen
  *(.fini)
- .fini          0x00000000100067c8        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crti.o
-                0x00000000100067c8                _fini
- *fill*         0x00000000100067cc        0x4 
- .fini.__stub   0x00000000100067d0       0xc0 linker stubs
+ .fini          0x000000001000697c        0x4 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crti.o
+                0x000000001000697c                _fini
+ .fini.__stub   0x0000000010006980       0xc0 linker stubs
  *crtbegin.o(.ctors)
  *crtbegin?.o(.ctors)
  *(EXCLUDE_FILE(*crtend.o *crtend?.o) .ctors)
@@ -2112,129 +2114,133 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(SORT_BY_NAME(.dtors.*))
  *(.dtors)
  *(.eh_frame*)
- .eh_frame      0x0000000010006890        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010006890                . = ALIGN (0x4)
+ .eh_frame      0x0000000010006a40        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010006a40                . = ALIGN (0x4)
 
-.glue_7         0x0000000010006890        0x0
- .glue_7        0x0000000010006890        0x0 linker stubs
+.glue_7         0x0000000010006a40        0x0
+ .glue_7        0x0000000010006a40        0x0 linker stubs
 
-.glue_7t        0x0000000010006890        0x0
- .glue_7t       0x0000000010006890        0x0 linker stubs
+.glue_7t        0x0000000010006a40        0x0
+ .glue_7t       0x0000000010006a40        0x0 linker stubs
 
-.vfp11_veneer   0x0000000010006890        0x0
- .vfp11_veneer  0x0000000010006890        0x0 linker stubs
+.vfp11_veneer   0x0000000010006a40        0x0
+ .vfp11_veneer  0x0000000010006a40        0x0 linker stubs
 
-.v4_bx          0x0000000010006890        0x0
- .v4_bx         0x0000000010006890        0x0 linker stubs
+.v4_bx          0x0000000010006a40        0x0
+ .v4_bx         0x0000000010006a40        0x0 linker stubs
 
-.iplt           0x0000000010006890        0x0
- .iplt          0x0000000010006890        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+.iplt           0x0000000010006a40        0x0
+ .iplt          0x0000000010006a40        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
-.rodata         0x0000000010006890      0x560
+.rodata         0x0000000010006a40      0x570
  *(EXCLUDE_FILE(*libm.a: *libc.a:*lib_a-mem*.o *libgcc.a:) .rodata*)
  .rodata.main.str1.4
-                0x0000000010006890       0x60 CMakeFiles/level.dir/src/level.cpp.obj
+                0x0000000010006a40       0x6c CMakeFiles/level.dir/src/level.cpp.obj
+ .rodata._ZZN6lis3dh4initEvE7__bi_43
+                0x0000000010006aac        0x8 CMakeFiles/level.dir/src/level.cpp.obj
  .rodata.spin_lock_claim_unused.str1.4
-                0x00000000100068f0       0x1b CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x000000001000690b        0x1 
+                0x0000000010006ab4       0x1b CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000010006acf        0x1 
  .rodata.hardware_alarm_claim.str1.4
-                0x000000001000690c       0x22 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
- *fill*         0x000000001000692e        0x2 
+                0x0000000010006ad0       0x22 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_timer/timer.c.obj
+ *fill*         0x0000000010006af2        0x2 
  .rodata.user_irq_claim_unused.str1.4
-                0x0000000010006930       0x1b CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
- *fill*         0x000000001000694b        0x1 
+                0x0000000010006af4       0x1b CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq.c.obj
+ *fill*         0x0000000010006b0f        0x1 
  .rodata.panic.str1.4
-                0x000000001000694c       0x12 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
- *fill*         0x000000001000695e        0x2 
+                0x0000000010006b10       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                                         0x12 (size before relaxing)
  .rodata.hard_assertion_failure.str1.4
-                0x0000000010006960        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
+                0x0000000010006b20        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
  .rodata._ftoa.str1.4
-                0x000000001000696c       0x15 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
- *fill*         0x0000000010006981        0x3 
+                0x0000000010006b2c       0x15 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+ *fill*         0x0000000010006b41        0x3 
  .rodata._vsnprintf
-                0x0000000010006984      0x19c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010006b44      0x19c CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.pow10.0
-                0x0000000010006b20       0x50 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
+                0x0000000010006ce0       0x50 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_printf/printf.c.obj
  .rodata.missing_double_func_shim.str1.4
-                0x0000000010006b70       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
+                0x0000000010006d30       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_double/double_init_rom.c.obj
  .rodata.missing_float_func_shim.str1.4
-                0x0000000010006b88       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
+                0x0000000010006d48       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_float/float_init_rom.c.obj
                                           0x1 (size before relaxing)
  .rodata.str1.4
-                0x0000000010006b88       0x50 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006d48       0x50 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_81
-                0x0000000010006bd8        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006d98        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_75
-                0x0000000010006be4        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006da4        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.__bi_44
-                0x0000000010006bf0        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006db0        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .rodata.crlf_str.0
-                0x0000000010006bfc        0x2 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
- *fill*         0x0000000010006bfe        0x2 
+                0x0000000010006dbc        0x2 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio/stdio.c.obj
+ *fill*         0x0000000010006dbe        0x2 
  .rodata._resetd_driver
-                0x0000000010006c00       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
+                0x0000000010006dc0       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/reset_interface.c.obj
  .rodata.str1.4
-                0x0000000010006c18       0x13 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
- *fill*         0x0000000010006c2b        0x1 
+                0x0000000010006dd8       0x13 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+ *fill*         0x0000000010006deb        0x1 
  .rodata.__bi_182.0
-                0x0000000010006c2c        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010006dec        0xc CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
  .rodata.str1.4
-                0x0000000010006c38       0x2a CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010006c62        0x2 
+                0x0000000010006df8       0x2a CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010006e22        0x2 
  .rodata.usbd_desc_str
-                0x0000000010006c64       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010006e24       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_cfg
-                0x0000000010006c7c       0x54 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+                0x0000000010006e3c       0x54 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
  .rodata.usbd_desc_device
-                0x0000000010006cd0       0x12 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
- *fill*         0x0000000010006ce2        0x2 
+                0x0000000010006e90       0x12 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb_descriptors.c.obj
+ *fill*         0x0000000010006ea2        0x2 
  .rodata.str1.4
-                0x0000000010006ce4       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
+                0x0000000010006ea4       0x14 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/dcd_rp2040.c.obj
  .rodata.str1.4
-                0x0000000010006cf8       0x53 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
- *fill*         0x0000000010006d4b        0x1 
+                0x0000000010006eb8       0x53 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/portable/raspberrypi/rp2040/rp2040_usb.c.obj
+ *fill*         0x0000000010006f0b        0x1 
  .rodata.tud_task_ext
-                0x0000000010006d4c       0x8c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006f0c       0x8c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
  .rodata._usbd_driver
-                0x0000000010006dd8       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
-                0x0000000010006df0                . = ALIGN (0x4)
+                0x0000000010006f98       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/device/usbd.c.obj
+                0x0000000010006fb0                . = ALIGN (0x4)
  *(SORT_BY_ALIGNMENT(SORT_BY_NAME(.flashdata*)))
-                0x0000000010006df0                . = ALIGN (0x4)
+                0x0000000010006fb0                . = ALIGN (0x4)
 
 .ARM.extab
  *(.ARM.extab* .gnu.linkonce.armextab.*)
-                0x0000000010006df0                __exidx_start = .
+                0x0000000010006fb0                __exidx_start = .
 
 .ARM.exidx
  *(.ARM.exidx* .gnu.linkonce.armexidx.*)
-                0x0000000010006df0                __exidx_end = .
-                0x0000000010006df0                . = ALIGN (0x4)
-                0x0000000010006df0                __binary_info_start = .
+                0x0000000010006fb0                __exidx_end = .
+                0x0000000010006fb0                . = ALIGN (0x4)
+                0x0000000010006fb0                __binary_info_start = .
 
-.binary_info    0x0000000010006df0       0x20
+.binary_info    0x0000000010006fb0       0x24
  *(.binary_info.keep.*)
+ .binary_info.keep.__bi_ptr43
+                0x0000000010006fb0        0x4 CMakeFiles/level.dir/src/level.cpp.obj
  .binary_info.keep.__bi_ptr81
-                0x0000000010006df0        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006fb4        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr75
-                0x0000000010006df4        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006fb8        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr50
-                0x0000000010006df8        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006fbc        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr44
-                0x0000000010006dfc        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006fc0        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr38
-                0x0000000010006e00        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006fc4        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr30
-                0x0000000010006e04        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006fc8        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  .binary_info.keep.__bi_ptr22
-                0x0000000010006e08        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
+                0x0000000010006fcc        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/binary_info.c.obj
  *(.binary_info.*)
  .binary_info.__bi_ptr182
-                0x0000000010006e0c        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
-                0x0000000010006e10                __binary_info_end = .
+                0x0000000010006fd0        0x4 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_stdio_usb/stdio_usb.c.obj
+                0x0000000010006fd4                __binary_info_end = .
 
-.rel.dyn        0x0000000010006e10        0x0
- .rel.iplt      0x0000000010006e10        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
-                0x0000000010006e10                . = ALIGN (0x4)
+.rel.dyn        0x0000000010006fd4        0x0
+ .rel.iplt      0x0000000010006fd4        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
+                0x0000000010006fd4                . = ALIGN (0x4)
 
 .ram_vector_table
                 0x0000000020000000       0xc0
@@ -2243,7 +2249,7 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
                 0x0000000020000000       0xc0 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_runtime/runtime.c.obj
                 0x0000000020000000                ram_vector_table
 
-.data           0x00000000200000c0      0xe30 load address 0x0000000010006e10
+.data           0x00000000200000c0      0xe30 load address 0x0000000010006fd4
                 0x00000000200000c0                __data_start__ = .
  *(vtable)
  *(.time_critical*)
@@ -2311,18 +2317,21 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  .data.i2c1_inst
                 0x0000000020000de8        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
                 0x0000000020000de8                i2c1_inst
+ .data.i2c0_inst
+                0x0000000020000df0        0x8 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/i2c.c.obj
+                0x0000000020000df0                i2c0_inst
  .data.striped_spin_lock_num
-                0x0000000020000df0        0x1 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
- *fill*         0x0000000020000df1        0x3 
+                0x0000000020000df8        0x1 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_sync/sync.c.obj
+ *fill*         0x0000000020000df9        0x3 
  .data.default_alarm_pool
-                0x0000000020000df4       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+                0x0000000020000dfc       0x18 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
  .data.default_alarm_pool_heap
-                0x0000000020000e0c       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
- .data          0x0000000020000e1c       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
-                0x0000000020000e1c                irq_handler_chain_slots
-                0x0000000020000e4c                irq_handler_chain_first_slot
-                0x0000000020000e56                irq_handler_chain_remove_tail
- *fill*         0x0000000020000e64        0xc 
+                0x0000000020000e14       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/common/pico_time/time.c.obj
+ .data          0x0000000020000e24       0x48 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/hardware_irq/irq_handler_chain.S.obj
+                0x0000000020000e24                irq_handler_chain_slots
+                0x0000000020000e54                irq_handler_chain_first_slot
+                0x0000000020000e5e                irq_handler_chain_remove_tail
+ *fill*         0x0000000020000e6c        0x4 
  .data.aeabi_bits_funcs
                 0x0000000020000e70       0x10 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_bit_ops/bit_ops_aeabi.S.obj
                 0x0000000020000e70                aeabi_bits_funcs
@@ -2379,36 +2388,36 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.jcr)
                 0x0000000020000ef0                . = ALIGN (0x4)
                 0x0000000020000ef0                __data_end__ = .
-                0x0000000010006e10                __etext = LOADADDR (.data)
+                0x0000000010006fd4                __etext = LOADADDR (.data)
 
 .tm_clone_table
-                0x0000000020000ef0        0x0 load address 0x0000000010007c40
+                0x0000000020000ef0        0x0 load address 0x0000000010007e04
  .tm_clone_table
                 0x0000000020000ef0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
  .tm_clone_table
                 0x0000000020000ef0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtend.o
 
-.igot.plt       0x0000000020000ef0        0x0 load address 0x0000000010007c40
+.igot.plt       0x0000000020000ef0        0x0 load address 0x0000000010007e04
  .igot.plt      0x0000000020000ef0        0x0 /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/crtbegin.o
 
 .uninitialized_data
-                0x0000000020000ef0        0x0 load address 0x0000000010007c40
+                0x0000000020000ef0        0x0 load address 0x0000000010007e04
                 0x0000000020000ef0                . = ALIGN (0x4)
  *(.uninitialized_data*)
 
-.scratch_x      0x0000000020040000        0x0 load address 0x0000000010007c40
+.scratch_x      0x0000000020040000        0x0 load address 0x0000000010007e04
                 0x0000000020040000                __scratch_x_start__ = .
  *(.scratch_x.*)
                 0x0000000020040000                . = ALIGN (0x4)
                 0x0000000020040000                __scratch_x_end__ = .
-                0x0000000010007c40                __scratch_x_source__ = LOADADDR (.scratch_x)
+                0x0000000010007e04                __scratch_x_source__ = LOADADDR (.scratch_x)
 
-.scratch_y      0x0000000020041000        0x0 load address 0x0000000010007c40
+.scratch_y      0x0000000020041000        0x0 load address 0x0000000010007e04
                 0x0000000020041000                __scratch_y_start__ = .
  *(.scratch_y.*)
                 0x0000000020041000                . = ALIGN (0x4)
                 0x0000000020041000                __scratch_y_end__ = .
-                0x0000000010007c40                __scratch_y_source__ = LOADADDR (.scratch_y)
+                0x0000000010007e04                __scratch_y_source__ = LOADADDR (.scratch_y)
 
 .bss            0x0000000020000ef0      0xd88
                 0x0000000020000ef0                . = ALIGN (0x4)
@@ -2525,8 +2534,8 @@ LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nof
  *(.stack*)
  .stack         0x0000000020041000      0x800 CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_standard_link/crt0.S.obj
 
-.flash_end      0x0000000010007c40        0x0
-                0x0000000010007c40                PROVIDE (__flash_binary_end = .)
+.flash_end      0x0000000010007e04        0x0
+                0x0000000010007e04                PROVIDE (__flash_binary_end = .)
                 0x0000000020040000                __StackLimit = (ORIGIN (RAM) + LENGTH (RAM))
                 0x0000000020041000                __StackOneTop = (ORIGIN (SCRATCH_X) + LENGTH (SCRATCH_X))
                 0x0000000020042000                __StackTop = (ORIGIN (SCRATCH_Y) + LENGTH (SCRATCH_Y))
@@ -2607,7 +2616,7 @@ LOAD CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/class/video/v
 LOAD CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/tusb.c.obj
 LOAD CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
 LOAD CMakeFiles/level.dir/home/crott/pico/pico-sdk/src/rp2_common/pico_fix/rp2040_usb_device_enumeration/rp2040_usb_device_enumeration.c.obj
-LOAD /tmp/ccE07jkq.o
+LOAD /tmp/ccflJI4E.o
 LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libstdc++.a
 LOAD /usr/lib/gcc/arm-none-eabi/12.2.1/../../../arm-none-eabi/lib/thumb/v6-m/nofp/libm.a
 START GROUP
@@ -2721,7 +2730,7 @@ LOAD linker stubs
  .ARM.attributes
                 0x0000000000000780       0x2c CMakeFiles/level.dir/home/crott/pico/pico-sdk/lib/tinyusb/src/common/tusb_fifo.c.obj
  .ARM.attributes
-                0x00000000000007ac       0x22 /tmp/ccE07jkq.o
+                0x00000000000007ac       0x22 /tmp/ccflJI4E.o
  .ARM.attributes
                 0x00000000000007ce       0x1e /usr/lib/gcc/arm-none-eabi/12.2.1/thumb/v6-m/nofp/libgcc.a(_dvmd_tls.o)
  .ARM.attributes

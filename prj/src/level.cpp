@@ -4,12 +4,12 @@
 int main() {
   stdio_init_all();
   // Singleton for the accelerometer
-  sleep_ms(10000);
+  sleep_ms(5000);
   printf("Setting up accelerometer\n");
   lis3dh accel;
   // initialize the accelerometer
+  sleep_ms(5000);
   printf("Initializing accelerometer\n");
-  sleep_ms(10000);
   accel.init();
   
   // Test blink
@@ -19,8 +19,10 @@ int main() {
 
   while (1) {
     // Update the accelerometer values
-    printf("X: %f, Y: %f, Z: %f\n", accel.get_x(), accel.get_y(), accel.get_z());
     accel.update();
+    printf("X: %.3fg\n", accel.get_x());
+    printf("Y: %.3fg\n", accel.get_y());
+    printf("Z: %.3fg\n", accel.get_z());
     // Print the values
     printf("Test USB Serial\n");
     gpio_put(LED_PIN, 1);
