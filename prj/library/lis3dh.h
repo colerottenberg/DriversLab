@@ -63,7 +63,6 @@ void lis3dh::update() {
   /* Updates the class members x, y, z with current acceleration values */
   float _x, _y, _z;
   // Read raw data from accelerometer and store through pointers
-
   lis3dh_read_data(0x28, &_x, true);
   lis3dh_read_data(0x2A, &_y, true);
   lis3dh_read_data(0x2C, &_z, true);
