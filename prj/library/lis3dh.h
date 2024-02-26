@@ -68,13 +68,8 @@ void lis3dh::update() {
   lis3dh_read_data(0x2A, &_y, true);
   lis3dh_read_data(0x2C, &_z, true);
 
-
-  float x, y, z;
-  // Convert raw data to g's and store in class members
-  lis3dh_calc_value(_x, &x, false);
-  lis3dh_calc_value(_y, &y, false);
-  lis3dh_calc_value(_z, &z, false);
-  this->x = x;
-  this->y = y;
-  this->z = z;
+  // Assign the values to the class members
+  this->x = _x;
+  this->y = _y;
+  this->z = _z;
 }
