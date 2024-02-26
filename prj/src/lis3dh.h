@@ -1,5 +1,10 @@
 /* Class for the On board accelerometer */
 
+/* 
+ * Keep in mind that on the Adafruit Feather RP2040, the I2C pins are 4 and 5.
+ * That truly means the SDA and SCL pins are 4 and 5 respectively.
+ */
+
 #include "lis3dh_i2c.c"
 
 class lis3dh {
