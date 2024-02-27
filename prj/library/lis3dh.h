@@ -27,7 +27,20 @@ public:
   float get_z() { return this->z; }
 };
 
-lis3dh::lis3dh(/* args */) {}
+lis3dh::lis3dh(/* args */) {
+  /* Constructor */
+
+  // Set the address and control registers
+  this->address = 0x18;
+  this->ctrl_reg1 = 0x20;
+  this->ctrl_reg4 = 0x23;
+  this->temp_cfg_reg = 0xC0;
+
+  // Initialize the acceleration values
+  this->x = 0;
+  this->y = 0;
+  this->z = 0;
+}
 
 lis3dh::~lis3dh() {}
 
@@ -49,26 +62,47 @@ bool lis3dh::init() {
 /* Setters and Getters for Registers */
 uint8_t lis3dh::read_reg(uint8_t reg) {
   /* Reads and returns the byte at address reg on accelerometer */
-  float data; // pass pointer to data for reading
-  lis3dh_read_data(reg, &data, true); // 1 for bool isAccel = true
-  return uint8_t(data);
+  uint8_t data; // pass pointer to data for reading
+  i2c_write_blocking(i2c_default, this->address, &reg, 1, true);
+  i2c_read_blocking(i2c_default, this->address, &data, 1, false);
+  return data;
 }
 
 void lis3dh::set_reg(uint8_t reg, uint8_t value) {
   /* Set a register on the LIS3D to a given value */
+  uint8_t data[2] = {reg, value};
+  i2c_write_blocking(i2c_default, this->address, data, 2, false);
+  return;
 }
 
 /* Update Functions */
 void lis3dh::update() {
   /* Updates the class members x, y, z with current acceleration values */
-  float _x, _y, _z;
-  // Read raw data from accelerometer and store through pointers
-  lis3dh_read_data(0x28, &_x, true);
-  lis3dh_read_data(0x2A, &_y, true);
-  lis3dh_read_data(0x2C, &_z, true);
+  float sensitivity = 0.004f; // Sensitivity of the accelerometer
+  float scaling = 64 / sensitivity; // Scaling factor for the accelerometer
 
-  // Assign the values to the class members
-  this->x = _x;
-  this->y = _y;
-  this->z = _z;
+  // Read raw data from accelerometer and store through pointers
+  uint8_t x_l, x_h, y_l, y_h, z_l, z_h;
+  x_l = read_reg(0x28);
+  x_h = read_reg(0x29);
+
+  y_l = read_reg(0x2A);
+  y_h = read_reg(0x2B);
+
+  z_l = read_reg(0x2C);
+  z_h = read_reg(0x2D);
+
+  // Combine the high and low bytes to get the raw data
+  int16_t x_raw = (x_h << 8) | x_l;
+  int16_t y_raw = (y_h << 8) | y_l;
+  int16_t z_raw = (z_h << 8) | z_l;
+
+  // Convert the raw data to acceleration
+
+  this->x = (float) ((int16_t) x_raw) / scaling;
+  this->y = (float) ((int16_t) y_raw) / scaling;
+  this->z = (float) ((int16_t) z_raw) / scaling;
+
+  // Return the acceleration values
+  return;
 }

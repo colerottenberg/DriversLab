@@ -15,16 +15,18 @@ pico_sdk_init()
 add_executable(level
           src/level.cpp
           library/lis3dh.h
+          library/neomatrix.h
           library/lis3dh_i2c.c
-  )
+          )
+# Generate the header file 
+pico_generate_pio_header(level ${PROJECT_PATH}/library/neomatrix.pio OUTPUT_DIR ${PROJECT_PATH}/library/generated)
 
-# target_sources(level PRIVATE src/level.cpp)
-# target_sources(level PRIVATE library/lis3dh.h)
 
-# target_include_directories(level PRIVATE ${PROJECT_PATH}/library/lis3dh)
-# target_include_directories(lis3dh PRIVATE ${PROJECT_PATH}/library/lis3dh)
-
+# Pull in our pico_stdlib which pulls in commonly used features
 target_link_libraries(level PRIVATE hardware_i2c hardware_pio pico_stdlib)
+
+# Enable USB and UART output
 pico_enable_stdio_usb(level 1) 
 pico_enable_stdio_uart(level 0)
+
 pico_add_extra_outputs(level)
