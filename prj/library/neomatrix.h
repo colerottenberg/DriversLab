@@ -1,9 +1,12 @@
 // Check slash vs underscore
 #include "pico/stdlib.h"
-#include "hardware_pio.h"
-#include "hardware_clocks"
+#include "hardware/pio.h"
+#include "hardware/clocks"
 #include "neopixel.pio.h"
+
+
 #include <vector>
+
 #include "stdlib.h"
 
 class NeoMatrix {
