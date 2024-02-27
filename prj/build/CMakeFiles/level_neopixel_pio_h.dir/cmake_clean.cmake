@@ -1,5 +1,5 @@
 file(REMOVE_RECURSE
-  "../library/generated/neopixel.pio.h"
+  "../libraries/generated/neopixel.pio.h"
   "CMakeFiles/level_neopixel_pio_h"
 )
 

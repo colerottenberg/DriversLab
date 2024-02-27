@@ -1,5 +1,5 @@
 # Hashes of file build rules.
-037a55e3a821d5d8e309150985e83e84 ../library/generated/neopixel.pio.h
+6b5e0b105e7c9e4af6e4eaacbff78c55 ../libraries/generated/neopixel.pio.h
 bc13af431096df407617c69e23905d80 CMakeFiles/ELF2UF2Build
 e9e709b9467fe88de3998421f8f73a6d CMakeFiles/ELF2UF2Build-complete
 bc13af431096df407617c69e23905d80 CMakeFiles/level_neopixel_pio_h

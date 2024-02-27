@@ -1,7 +1,7 @@
 CMakeFiles/level.dir/src/level.cpp.obj: \
  /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/src/level.cpp \
- /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/src/../library/lis3dh.h \
- /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/src/../library/lis3dh_i2c.c \
+ /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/src/../libraries/lis3dh.h \
+ /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/src/../libraries/lis3dh_i2c.c \
  /usr/include/newlib/stdio.h /usr/include/newlib/_ansi.h \
  /usr/include/newlib/newlib.h /usr/include/newlib/_newlib_version.h \
  /usr/include/newlib/sys/config.h /usr/include/newlib/machine/ieeefp.h \
@@ -71,12 +71,12 @@ CMakeFiles/level.dir/src/level.cpp.obj: \
  /home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/include/hardware/i2c.h \
  /home/crott/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/i2c.h \
  /home/crott/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/i2c.h \
- /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/src/../library/neomatrix.h \
+ /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/src/../libraries/neomatrix.h \
  /home/crott/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio.h \
  /home/crott/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/pio.h \
  /home/crott/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/pio.h \
  /home/crott/pico/pico-sdk/src/rp2_common/hardware_pio/include/hardware/pio_instructions.h \
- /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/library/generated/neopixel.pio.h \
+ /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/libraries/generated/neopixel.pio.h \
  /home/crott/pico/pico-sdk/src/rp2_common/hardware_clocks/include/hardware/clocks.h \
  /home/crott/pico/pico-sdk/src/rp2040/hardware_structs/include/hardware/structs/clocks.h \
  /home/crott/pico/pico-sdk/src/rp2040/hardware_regs/include/hardware/regs/clocks.h \

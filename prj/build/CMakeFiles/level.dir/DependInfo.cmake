@@ -70,7 +70,7 @@ set(CMAKE_TARGET_DEFINITIONS_ASM
 
 # The include file search paths:
 set(CMAKE_ASM_TARGET_INCLUDE_PATH
-  "../library/generated"
+  "../libraries/generated"
   "/home/crott/pico/pico-sdk/src/rp2_common/hardware_i2c/include"
   "/home/crott/pico/pico-sdk/src/common/pico_base/include"
   "generated/pico_base"

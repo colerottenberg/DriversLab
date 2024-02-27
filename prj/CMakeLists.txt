@@ -14,11 +14,11 @@ pico_sdk_init()
 
 add_executable(level
           src/level.cpp
-          library/lis3dh.h
-          library/neomatrix.h
+          libraries/lis3dh.h
+          libraries/neomatrix.h
           )
 # Generate the header file 
-pico_generate_pio_header(level ${PROJECT_PATH}/library/neopixel.pio OUTPUT_DIR ${PROJECT_PATH}/library/generated)
+pico_generate_pio_header(level ${PROJECT_PATH}/libraries/neopixel.pio OUTPUT_DIR ${PROJECT_PATH}/libraries/generated)
 
 
 # Pull in our pico_stdlib which pulls in commonly used features

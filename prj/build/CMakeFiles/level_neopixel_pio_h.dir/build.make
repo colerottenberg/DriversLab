@@ -66,14 +66,14 @@ include CMakeFiles/level_neopixel_pio_h.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/level_neopixel_pio_h.dir/progress.make
 
-CMakeFiles/level_neopixel_pio_h: ../library/generated/neopixel.pio.h
+CMakeFiles/level_neopixel_pio_h: ../libraries/generated/neopixel.pio.h
 
-../library/generated/neopixel.pio.h: ../library/neopixel.pio
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../library/generated/neopixel.pio.h"
-	pioasm/pioasm -o c-sdk /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/library/neopixel.pio /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/library/generated/neopixel.pio.h
+../libraries/generated/neopixel.pio.h: ../libraries/neopixel.pio
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating ../libraries/generated/neopixel.pio.h"
+	pioasm/pioasm -o c-sdk /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/libraries/neopixel.pio /home/crott/Documents/spring24/cpe_design_1/DriversLab/prj/libraries/generated/neopixel.pio.h
 
 level_neopixel_pio_h: CMakeFiles/level_neopixel_pio_h
-level_neopixel_pio_h: ../library/generated/neopixel.pio.h
+level_neopixel_pio_h: ../libraries/generated/neopixel.pio.h
 level_neopixel_pio_h: CMakeFiles/level_neopixel_pio_h.dir/build.make
 .PHONY : level_neopixel_pio_h
 

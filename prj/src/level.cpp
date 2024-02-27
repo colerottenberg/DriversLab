@@ -1,5 +1,5 @@
-#include "../library/lis3dh.h"
-#include "../library/neomatrix.h"
+#include "../libraries/lis3dh.h"
+#include "../libraries/neomatrix.h"
 #include "pico/stdlib.h"
 
 int main() {
