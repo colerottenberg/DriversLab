@@ -16,7 +16,6 @@ int main() {
   printf("Initializing NeoMatrix\n");
   neo.init();
   
-
   while (1) {
     // Update the accelerometer values
     neo.clear();
@@ -24,7 +23,6 @@ int main() {
     printf("X: %.3fg\n", accel.get_x());
     printf("Y: %.3fg\n", accel.get_y());
     printf("Z: %.3fg\n", accel.get_z());
-    
     // Set the pixel color based on the acceleration
     if( (accel.get_x() <= 0.1 && accel.get_x() >= -0.1) && (accel.get_y() <= 0.1 && accel.get_y() >= -0.1) && (accel.get_z() <= 1.1 && accel.get_z() >= 0.9)){
       // Set all pixels to red
@@ -40,7 +38,6 @@ int main() {
         }
       }
     }
-
     sleep_ms(25);
     neo.write();
   }
