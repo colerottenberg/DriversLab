@@ -1,34 +1,48 @@
 #include "../library/lis3dh.h"
+#include "../library/neomatrix.h"
 #include "pico/stdlib.h"
 
 int main() {
   stdio_init_all();
   // Singleton for the accelerometer
-  sleep_ms(5000);
   printf("Setting up accelerometer\n");
   lis3dh accel;
   // initialize the accelerometer
   sleep_ms(5000);
   printf("Initializing accelerometer\n");
   accel.init();
+
+  NeoMatrix neo(8, 8);
+  printf("Initializing NeoMatrix\n");
+  neo.init();
   
-  // Test blink
-  const uint LED_PIN = 13;
-  gpio_init(LED_PIN);
-  gpio_set_dir(LED_PIN, GPIO_OUT);
 
   while (1) {
     // Update the accelerometer values
+    neo.clear();
     accel.update();
     printf("X: %.3fg\n", accel.get_x());
     printf("Y: %.3fg\n", accel.get_y());
     printf("Z: %.3fg\n", accel.get_z());
-    // Print the values
-    printf("Test USB Serial\n");
-    gpio_put(LED_PIN, 1);
-    sleep_ms(50);
-    gpio_put(LED_PIN, 0);
-    sleep_ms(50);
+    
+    // Set the pixel color based on the acceleration
+    if( (accel.get_x() <= 0.1 && accel.get_x() >= -0.1) && (accel.get_y() <= 0.1 && accel.get_y() >= -0.1) && (accel.get_z() <= 1.1 && accel.get_z() >= 0.9)){
+      // Set all pixels to red
+      for (int i = 0; i < 8; i++) {
+        for (int j = 0; j < 8; j++) {
+          neo.set_pixel(i, j, 0xFF0000);
+        }
+      }
+    } else {
+      for (int i = 0; i < 8; i++) {
+        for (int j = 0; j < 8; j++) {
+          neo.set_pixel(i, j, 0x00FF00);
+        }
+      }
+    }
+
+    sleep_ms(25);
+    neo.write();
   }
   return 0;
 }

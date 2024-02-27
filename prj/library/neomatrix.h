@@ -1,7 +1,6 @@
 // Check slash vs underscore
 #include "pico/stdlib.h"
 #include "hardware/pio.h"
-#include "hardware/clocks"
 #include "neopixel.pio.h"
 
 
@@ -13,7 +12,7 @@ class NeoMatrix {
     private:
         /* data */
         uint8_t width, height;
-        std::vector<uint32_t> pixel_map;
+        std::vector<std::vector<uint32_t>> pixel_map;
     public:
         NeoMatrix(uint8_t width, uint8_t height);
         ~NeoMatrix();
@@ -41,6 +40,9 @@ bool NeoMatrix::init() {
     gpio_put(LED_PIN, 1);
     
     PIO pio = pio0;
+    int sm = 0;
+    uint offset = pio_add_program(pio, &ws2812_program);
+    ws2812_program_init(pio, sm, offset, 7, 800000, false);
     return true;
 }
 
@@ -55,7 +57,7 @@ void NeoMatrix::write() {
     for(uint8_t row = 0; row < this->height; row++) {
         for(uint8_t col = 0; col < this->width; col++) {
             // Write the pixel to the NeoMatrix
-            pio_sm_put_blocking(pio, 0, this->pixel_map[row][col] << 8);
+            pio_sm_put_blocking(pio0, 0, pixel_map[row][col] << 8);
         }
     }
     return;
@@ -66,7 +68,7 @@ void NeoMatrix::clear() {
     for(uint8_t row = 0; row < this->height; row++) {
         for(uint8_t col = 0; col < this->width; col++) {
             // Clear the pixel at row, col
-            this->pixel_map[row][col] = 0;
+            set_pixel(row, col, 0);
         }
     }
     return;
